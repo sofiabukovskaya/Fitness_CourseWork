@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4BD5804F-0727-4260-830F-A234C2692CA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fitness_CourseWork</RootNamespace>
+    <AssemblyName>Fitness_CourseWork</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCoach.Designer.cs">
+      <DependentUpon>AddCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddGroup.Designer.cs">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSeasonTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSeasonTicket.Designer.cs">
+      <DependentUpon>AddSeasonTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminEditing.Designer.cs">
+      <DependentUpon>AdminEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginEditing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginEditing.Designer.cs">
+      <DependentUpon>AdminLoginEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuySeasonTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuySeasonTicket.Designer.cs">
+      <DependentUpon>BuySeasonTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientPage.Designer.cs">
+      <DependentUpon>ClientPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientLogin.Designer.cs">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientLoginRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientLoginRegistration.Designer.cs">
+      <DependentUpon>ClientLoginRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoachFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoachFilter.Designer.cs">
+      <DependentUpon>CoachFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoachSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoachSchedule.Designer.cs">
+      <DependentUpon>CoachSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoachScheduleFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoachScheduleFilter.Designer.cs">
+      <DependentUpon>CoachScheduleFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FindGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindGroup.Designer.cs">
+      <DependentUpon>FindGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness_DbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fitness_DbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness_DbDataSet1.cs">
+      <DependentUpon>Fitness_DbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fitness_DbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Fitness_DbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupFilter.Designer.cs">
+      <DependentUpon>GroupFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupSchedule.Designer.cs">
+      <DependentUpon>GroupSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupScheduleFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupScheduleFilter.Designer.cs">
+      <DependentUpon>GroupScheduleFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRegistration.Designer.cs">
+      <DependentUpon>ClientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsClient.Designer.cs">
+      <DependentUpon>ReportsClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeasonTicketFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeasonTicketFilter.Designer.cs">
+      <DependentUpon>SeasonTicketFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlQuery.Designer.cs">
+      <DependentUpon>SqlQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCoach.resx">
+      <DependentUpon>AddCoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddGroup.resx">
+      <DependentUpon>AddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSeasonTicket.resx">
+      <DependentUpon>AddSeasonTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminEditing.resx">
+      <DependentUpon>AdminEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginEditing.resx">
+      <DependentUpon>AdminLoginEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuySeasonTicket.resx">
+      <DependentUpon>BuySeasonTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientPage.resx">
+      <DependentUpon>ClientPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLogin.resx">
+      <DependentUpon>ClientLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientLoginRegistration.resx">
+      <DependentUpon>ClientLoginRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoachFilter.resx">
+      <DependentUpon>CoachFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoachScheduleFilter.resx">
+      <DependentUpon>CoachScheduleFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindGroup.resx">
+      <DependentUpon>FindGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupFilter.resx">
+      <DependentUpon>GroupFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupSchedule.resx">
+      <DependentUpon>GroupSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupScheduleFilter.resx">
+      <DependentUpon>GroupScheduleFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientRegistration.resx">
+      <DependentUpon>ClientRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsClient.resx">
+      <DependentUpon>ReportsClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeasonTicketFilter.resx">
+      <DependentUpon>SeasonTicketFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SqlQuery.resx">
+      <DependentUpon>SqlQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Fitness_DbDataSet.xsc">
+      <DependentUpon>Fitness_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Fitness_DbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fitness_DbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fitness_DbDataSet.xss">
+      <DependentUpon>Fitness_DbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Fitness_DbDataSet1.xsc">
+      <DependentUpon>Fitness_DbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Fitness_DbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Fitness_DbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Fitness_DbDataSet1.xss">
+      <DependentUpon>Fitness_DbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
